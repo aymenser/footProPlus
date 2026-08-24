@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProFoot Plus - Technical Proposal | Overview</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Persistent Executive Navbar -->
+<nav class="top-nav">
+    <div class="brand-logo">PROFOOT <span>PLUS</span></div>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">01. Executive Overview</a></li>
+        <li><a href="architecture.html">02. Validation & POS Sync</a></li>
+        <li><a href="blueprint.html">03. Platform Blueprint</a></li>
+        <li><a href="prerequisites.html">04. Requirements</a></li>
+    </ul>
+    <div class="nav-controls">
+        <button class="btn-control" onclick="toggleLanguage()">FR / EN</button>
+        <button class="btn-control" onclick="exportFullPDF()">Export PDF</button>
+    </div>
+</nav>
+
+<main class="container">
+
+    <!-- Hero Header -->
+    <header class="hero-header">
+        <h1 class="hero-title" data-lang="en">Enterprise E-Commerce Platform Architecture</h1>
+        <h1 class="hero-title" data-lang="fr">Architecture de la Plateforme E-Commerce Entreprise</h1>
+
+        <p class="hero-subtitle" data-lang="en">Custom engineering blueprint for ProFoot Plus with real-time XL POS synchronization and zero monthly recurring infrastructure costs  .</p>
+        <p class="hero-subtitle" data-lang="fr">Spécification technique sur mesure pour ProFoot Plus avec synchronisation XL POS en temps réel et zéro frais d'infrastructure récurrents  .</p>
+
+        <!-- Key Engineering Metrics -->
+        <div class="metrics-grid">
+            <div class="stat-card">
+                <div class="stat-value">&lt; 300ms</div>
+                <div class="stat-label" data-lang="en">Target Load Speed </div>
+                <div class="stat-label" data-lang="fr">Vitesse de Chargement </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">10,000+</div>
+                <div class="stat-label" data-lang="en">Catalog Capacity </div>
+                <div class="stat-label" data-lang="fr">Capacité Catalogue </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">Real-Time</div>
+                <div class="stat-label" data-lang="en">XL POS WebSync </div>
+                <div class="stat-label" data-lang="fr">Synchro XL POS </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">0 DA/mo</div>
+                <div class="stat-label" data-lang="en">Cloud Hosting Cost </div>
+                <div class="stat-label" data-lang="fr">Frais d'Hébergement </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: EXECUTIVE SUMMARY -->
+    <section>
+        <h2 class="section-title" data-lang="en">01. Executive Summary & Core Pillars</h2>
+        <h2 class="section-title" data-lang="fr">01. Synthèse Élective & Piliers Techniques</h2>
+
+        <!-- English Intro Block -->
+        <div data-lang="en" style="margin-bottom: 30px;">
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 20px;">
+                We are building a custom website for ProFoot Plus entirely from scratch . It hooks directly into your store's XL POS cash register so you will never have to manually update stock . The platform runs with zero lag or page loading delays, free from slow third-party templates .
+            </p>
+        </div>
+
+        <!-- French Intro Block -->
+        <div data-lang="fr" style="margin-bottom: 30px;">
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 20px;">
+                En gros, on prépare un site custom pour ProFoot Plus en partant de zéro . Ça se branche directement sur la caisse XL POS de la boutique, du coup pas besoin de mettre à jour à la main . En plus, aucun lag ni temps de chargement, et aucun vieux template tiers tout lent .
+            </p>
+        </div>
+
+        <!-- Core Technical Pillars Grid -->
+        <div class="cards-grid">
+
+            <div class="info-card">
+                <span class="card-tag">Performance</span>
+
+                <div data-lang="en">
+                    <h3>10k+ Items, Zero Lag</h3>
+                    <p>Handles over 10,000 products super fast, loading in under 300ms even on weak 3G mobile networks .</p>
+                </div>
+                <div data-lang="fr">
+                    <h3>+10k Articles, Zéro Lag</h3>
+                    <p>Ça gère plus de 10 000 produits hyper vite, ça charge en moins de 300ms même avec une mauvaise connexion 3G .</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <span class="card-tag">Integration</span>
+
+                <div data-lang="en">
+                    <h3>Real-Time XL POS Sync</h3>
+                    <p>Two-way sync between your physical shop and the online store. When someone buys in person, online stock updates instantly .</p>
+                </div>
+                <div data-lang="fr">
+                    <h3>Synchro XL POS en Direct</h3>
+                    <p>Synchro dans les deux sens entre le magasin physique et le site web. Quand un client achète sur place, ça met à jour le stock en ligne direct .</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <span class="card-tag">Architecture</span>
+
+                <div data-lang="en">
+                    <h3>100% Custom Build</h3>
+                    <p>No WordPress, no Shopify, and zero bloated plugins to slow down server response times over time .</p>
+                </div>
+                <div data-lang="fr">
+                    <h3>100% Sur Mesure</h3>
+                    <p>Pas de WordPress, pas de Shopify, zéro plugin lourd pour tout ralentir plus tard .</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <span class="card-tag">Security</span>
+
+                <div data-lang="en">
+                    <h3>AI Security & Anti-Spam</h3>
+                    <p>Smart firewall that automatically stops fake orders, spam reviews, and fraudulent transaction attempts .</p>
+                </div>
+                <div data-lang="fr">
+                    <h3>Sécurité IA & Anti-Spam</h3>
+                    <p>Pare-feu intelligent qui bloque les fausses commandes, les faux avis, et les tentatives de fraude tout seul .</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: BIG PROBLEMS SOLVED -->
+    <section>
+        <h2 class="section-title" data-lang="en">02. Major Technical & Financial Risks Solved</h2>
+        <h2 class="section-title" data-lang="fr">02. Les Gros Problèmes Qu'on Règle</h2>
+
+        <div class="cards-grid">
+
+            <!-- Problem 1 -->
+            <div class="info-card">
+                <span class="card-tag" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">Problem 01</span>
+
+                <div data-lang="en">
+                    <h3>Stock Mismatches & Overselling</h3>
+                    <p><strong>The Risk:</strong> A customer in the physical store buys the last pair of shoes at the exact moment an online buyer orders the same item. The website accepts payment for an item already out of stock .</p>
+                    <p style="margin-top: 10px; color: var(--text-main);"><strong>The Solution:</strong> Real-Time Atomic Sync. Using custom web APIs, the moment an item is scanned on the XL POS register or bought online, the database updates instantly. If stock drops to zero, the page updates immediately to block orders .</p>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Merdes de Stock et Ventes en Double</h3>
+                    <p><strong>Le Souci:</strong> Un gars en magasin achète la dernière paire de pompes en même temps qu'un mec sur le site. Résultat: le site encaisse pour un truc qu'on n'a déjà plus .</p>
+                    <p style="margin-top: 10px; color: var(--text-main);"><strong>La Solution:</strong> Synchro atomique en direct. Avec des API web custom, dès qu'un produit est scanné sur la caisse XL POS ou vendu en ligne, la base de données met tout à jour instantanément. Si le stock tombe à zéro, la page se bloque directe .</p>
+                </div>
+            </div>
+
+            <!-- Problem 2 -->
+            <div class="info-card">
+                <span class="card-tag" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">Problem 02</span>
+
+                <div data-lang="en">
+                    <h3>Slow Loading Speeds on Large Catalog (+10k Items)</h3>
+                    <p><strong>The Risk:</strong> Loading thousands of shoes causes website lag, filter crashes, and buyer abandonment on weak 3G networks .</p>
+                    <p style="margin-top: 10px; color: var(--text-main);"><strong>The Solution:</strong> 90% image compression (WebP/AVIF) , Smart DOM Virtualization (only renders on-screen items) , and batched fetching (loads in light packages of 12 items with sub-300ms filters) .</p>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Site Tout Lent avec Gros Catalogue (+10k Produits)</h3>
+                    <p><strong>Le Souci:</strong> Charger des milliers de paires fait ramer le site, les filtres plantent, et les clients sur une mauvaise 3G se cassent .</p>
+                    <p style="margin-top: 10px; color: var(--text-main);"><strong>La Solution:</strong> Compression d'image à 90% (WebP/AVIF) , DOM virtuel (charge juste ce qui s'affiche à l'écran) , et chargement par lots (items par petits paquets de 12 avec réactivité sub-300ms) .</p>
+                </div>
+            </div>
+
+            <!-- Problem 3 -->
+            <div class="info-card">
+                <span class="card-tag" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">Problem 03</span>
+
+                <div data-lang="en">
+                    <h3>Expensive Monthly Server Subscriptions</h3>
+                    <p><strong>The Risk:</strong> Pro cloud hosting providers drain $30 to $100 every single month continuously .</p>
+                    <p style="margin-top: 10px; color: var(--text-main);"><strong>The Solution:</strong> Dedicated Oracle Enterprise Cloud. Deployed directly on Oracle Cloud Architecture. You pay one time for setup, resulting in 0 DA monthly server bills even as your inventory expands .</p>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Abonnements Serveurs qui Coûtent une Blinde</h3>
+                    <p><strong>Le Souci:</strong> Les serveurs cloud pros te pompent entre 30 et 100 balles tous les mois sans s'arrêter .</p>
+                    <p style="margin-top: 10px; color: var(--text-main);"><strong>La Solution:</strong> Cloud Oracle Enterprise dédié. On installe tout directement sur l'architecture Oracle Cloud. Tu payes l'installation une fois et après c'est 0 DA de facture par mois, même si ton catalogue augmente .</p>
+                </div>
+            </div>
+
+            <!-- Problem 4 -->
+            <div class="info-card">
+                <span class="card-tag" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">Problem 04</span>
+
+                <div data-lang="en">
+                    <h3>Low Average Order Value & Single-Item Purchases</h3>
+                    <p><strong>The Risk:</strong> Shoppers buy a single t-shirt and leave without exploring matching items .</p>
+                    <p style="margin-top: 10px; color: var(--text-main);"><strong>The Solution:</strong> Automatic Style Matcher. When viewing an item, an intelligent recommendation engine finds matching items of the same brand or color scheme (e.g., t-shirt + matching shorts and cap directly below) .</p>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Paniers Moyens Trop Bas</h3>
+                    <p><strong>Le Souci:</strong> Les gens prennent juste un t-shirt et se cassent du site sans rien regarder d'autre .</p>
+                    <p style="margin-top: 10px; color: var(--text-main);"><strong>La Solution:</strong> Recommandation de style automatique. Quand le mec regarde un produit, un petit algo cherche des articles de la même marque ou même couleur (genre t-shirt + le short et la casquette assortie juste en dessous) .</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<script>
+    function toggleLanguage() {
+        document.body.classList.toggle('lang-fr');
+    }
+
+    async function exportFullPDF() {
+        const pages = [
+            'index.html',
+            'architecture.html',
+            'blueprint.html',
+            'prerequisites.html'
+        ];
+
+        // Create an isolated hidden rendering container
+        const printFrame = document.createElement('iframe');
+        printFrame.style.position = 'fixed';
+        printFrame.style.right = '0';
+        printFrame.style.bottom = '0';
+        printFrame.style.width = '0';
+        printFrame.style.height = '0';
+        printFrame.style.border = '0';
+        document.body.appendChild(printFrame);
+
+        const frameDoc = printFrame.contentWindow.document;
+        const isFrench = document.body.classList.contains('lang-fr');
+
+        frameDoc.open();
+        frameDoc.write(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>ProFoot Plus - Complete Technical Proposal</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body class="${isFrench ? 'lang-fr' : ''}">
+            <main class="container">
+    `);
+
+        // Asynchronously compile <main> blocks from each proposal section
+        for (let i = 0; i < pages.length; i++) {
+            try {
+                const response = await fetch(pages[i]);
+                const htmlText = await response.text();
+                const parser = new DOMParser();
+                const parsedDoc = parser.parseFromString(htmlText, 'text/html');
+                const mainContent = parsedDoc.querySelector('main.container');
+
+                if (mainContent) {
+                    frameDoc.write(mainContent.innerHTML);
+                    if (i < pages.length - 1) {
+                        frameDoc.write('<div style="page-break-after: always; margin-bottom: 40px;"></div>');
+                    }
+                }
+            } catch (error) {
+                console.error(`Error loading section ${pages[i]}:`, error);
+            }
+        }
+
+        frameDoc.write('</main></body></html>');
+        frameDoc.close();
+
+        // Trigger native PDF print sequence after styles load
+        setTimeout(() => {
+            printFrame.contentWindow.focus();
+            printFrame.contentWindow.print();
+            document.body.removeChild(printFrame);
+        }, 400);
+    }
+</script>
+</body>
+</html>

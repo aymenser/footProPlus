@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProFoot Plus - Technical Proposal | Client Requirements</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Persistent Executive Navbar -->
+<nav class="top-nav">
+  <div class="brand-logo">PROFOOT <span>PLUS</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">01. Executive Overview</a></li>
+    <li><a href="architecture.html">02. Validation & POS Sync</a></li>
+    <li><a href="blueprint.html">03. Platform Blueprint</a></li>
+    <li><a href="prerequisites.html" class="active">04. Requirements</a></li>
+  </ul>
+  <div class="nav-controls">
+    <button class="btn-control" onclick="toggleLanguage()">FR / EN</button>
+    <button class="btn-control" onclick="exportFullPDF()">Export PDF</button>
+  </div>
+</nav>
+
+<main class="container">
+
+  <!-- Hero Header -->
+  <header class="hero-header">
+    <h1 class="hero-title" data-lang="en">Client Prerequisites & Infrastructure Requirements</h1>
+    <h1 class="hero-title" data-lang="fr">Prérequis Client & Conditions d'Infrastructure</h1>
+
+    <p class="hero-subtitle" data-lang="en">Essential accounts, API authorizations, and domain access required before kick-starting cloud deployment.<!--[cite: 13]--></p>
+    <p class="hero-subtitle" data-lang="fr">Comptes essentiels, autorisations API et accès au domaine requis avant de lancer le déploiement.<!--[cite: 13]--></p>
+  </header>
+
+  <!-- SECTION: CLIENT PREREQUISITES CHECKLIST -->
+  <section>
+    <h2 class="section-title" data-lang="en">01. Onboarding Checklist</h2>
+    <h2 class="section-title" data-lang="fr">01. Liste de Contrôle Préalable</h2>
+
+    <div class="cards-grid">
+
+      <!-- Requirement 1: Oracle Cloud Account -->
+      <div class="info-card">
+        <span class="card-tag">Cloud Infrastructure</span>
+
+        <div data-lang="en">
+          <h3>1. Oracle Cloud Account (Verification Card)</h3>
+          <p style="margin-bottom: 12px; color: var(--text-muted);">
+            An international Visa or Mastercard issued by a physical bank (e.g., AGB / Gulf Bank Algeria, BDL, BEA, Société Générale) is required to complete account verification.<!--[cite: 13]-->
+          </p>
+          <div style="background: rgba(239, 68, 68, 0.1); border-left: 3px solid #ef4444; padding: 12px; border-radius: 4px; margin-top: 10px;">
+            <strong style="color: #ef4444;">Important Note:</strong>
+            <p style="font-size: 0.9em; margin-top: 4px; color: var(--text-muted);">Oracle Cloud strictly requires a physical bank card. Virtual prepaid cards (such as RedotPay or Pyypl) are automatically rejected by Oracle's fraud system.<!--[cite: 13]--></p>
+          </div>
+        </div>
+
+        <div data-lang="fr">
+          <h3>1. Compte Oracle Cloud (Carte de Vérification)</h3>
+          <p style="margin-bottom: 12px; color: var(--text-muted);">
+            Une carte Visa ou Mastercard internationale émise par une banque physique (ex. AGB, BDL, BEA, Société Générale) est requise pour valider le compte.<!--[cite: 13]-->
+          </p>
+          <div style="background: rgba(239, 68, 68, 0.1); border-left: 3px solid #ef4444; padding: 12px; border-radius: 4px; margin-top: 10px;">
+            <strong style="color: #ef4444;">Note Importante :</strong>
+            <p style="font-size: 0.9em; margin-top: 4px; color: var(--text-muted);">Oracle Cloud exige strictement une carte bancaire physique. Les cartes prépayées virtuelles (type RedotPay ou Pyypl) sont rejetées par le système anti-fraude d'Oracle.<!--[cite: 13]--></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Requirement 2: XL POS Module -->
+      <div class="info-card">
+        <span class="card-tag">POS Synchronization</span>
+
+        <div data-lang="en">
+          <h3>2. XL POS E-Commerce Module Activation</h3>
+          <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+            <li>Contact <strong>Boitex Info</strong> (official XL POS distributor in Algeria) to activate the <em>Connecteur E-Commerce Standard (WebServices API)</em> license on your store system.<!--[cite: 13]--></li>
+            <li>Obtain and provide the resulting <strong>API Key</strong> and <strong>WebService Endpoint URL</strong>.<!--[cite: 13]--></li>
+          </ul>
+        </div>
+
+        <div data-lang="fr">
+          <h3>2. Activation du Module E-Commerce XL POS</h3>
+          <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+            <li>Contacter <strong>Boitex Info</strong> (distributeur officiel XL POS en Algérie) pour activer la licence <em>Connecteur E-Commerce Standard (API WebServices)</em>.<!--[cite: 13]--></li>
+            <li>Obtenir et transmettre la <strong>Clé API</strong> et l'<strong>URL Endpoint WebService</strong> générées.<!--[cite: 13]--></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Requirement 3: Domain Name -->
+      <div class="info-card">
+        <span class="card-tag">Web Address</span>
+
+        <div data-lang="en">
+          <h3>3. Domain Name Registration</h3>
+          <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+            <li>Ownership access to your chosen web address (e.g., <code>profootplus.dz</code> or <code>profootplus.com</code>).<!--[cite: 13]--></li>
+            <li><em>Note:</em> Technical DNS configuration and SSL security setup will be handled on your behalf.<!--[cite: 13]--></li>
+          </ul>
+        </div>
+
+        <div data-lang="fr">
+          <h3>3. Réservation du Nom de Domaine</h3>
+          <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+            <li>Accès à la propriété de votre adresse web (ex. <code>profootplus.dz</code> ou <code>profootplus.com</code>).<!--[cite: 13]--></li>
+            <li><em>Note :</em> La configuration technique des DNS et la sécurité SSL seront prises en charge par nos soins.<!--[cite: 13]--></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<script>
+  function toggleLanguage() {
+    document.body.classList.toggle('lang-fr');
+  }
+
+  async function exportFullPDF() {
+    const pages = [
+      'index.html',
+      'architecture.html',
+      'blueprint.html',
+      'prerequisites.html'
+    ];
+
+    // Create an isolated hidden rendering container
+    const printFrame = document.createElement('iframe');
+    printFrame.style.position = 'fixed';
+    printFrame.style.right = '0';
+    printFrame.style.bottom = '0';
+    printFrame.style.width = '0';
+    printFrame.style.height = '0';
+    printFrame.style.border = '0';
+    document.body.appendChild(printFrame);
+
+    const frameDoc = printFrame.contentWindow.document;
+    const isFrench = document.body.classList.contains('lang-fr');
+
+    frameDoc.open();
+    frameDoc.write(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>ProFoot Plus - Complete Technical Proposal</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body class="${isFrench ? 'lang-fr' : ''}">
+            <main class="container">
+    `);
+
+    // Asynchronously compile <main> blocks from each proposal section
+    for (let i = 0; i < pages.length; i++) {
+      try {
+        const response = await fetch(pages[i]);
+        const htmlText = await response.text();
+        const parser = new DOMParser();
+        const parsedDoc = parser.parseFromString(htmlText, 'text/html');
+        const mainContent = parsedDoc.querySelector('main.container');
+
+        if (mainContent) {
+          frameDoc.write(mainContent.innerHTML);
+          if (i < pages.length - 1) {
+            frameDoc.write('<div style="page-break-after: always; margin-bottom: 40px;"></div>');
+          }
+        }
+      } catch (error) {
+        console.error(`Error loading section ${pages[i]}:`, error);
+      }
+    }
+
+    frameDoc.write('</main></body></html>');
+    frameDoc.close();
+
+    // Trigger native PDF print sequence after styles load
+    setTimeout(() => {
+      printFrame.contentWindow.focus();
+      printFrame.contentWindow.print();
+      document.body.removeChild(printFrame);
+    }, 400);
+  }
+</script>
+</body>
+</html>

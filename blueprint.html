@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProFoot Plus - Technical Proposal | Platform Blueprint</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Persistent Executive Navbar -->
+<nav class="top-nav">
+    <div class="brand-logo">PROFOOT <span>PLUS</span></div>
+    <ul class="nav-links">
+        <li><a href="index.html">01. Executive Overview</a></li>
+        <li><a href="architecture.html">02. Validation & POS Sync</a></li>
+        <li><a href="blueprint.html" class="active">03. Platform Blueprint</a></li>
+        <li><a href="prerequisites.html">04. Requirements</a></li>
+    </ul>
+    <div class="nav-controls">
+        <button class="btn-control" onclick="toggleLanguage()">FR / EN</button>
+        <button class="btn-control" onclick="exportFullPDF()">Export PDF</button>
+    </div>
+</nav>
+
+<main class="container">
+
+    <!-- Hero Header -->
+    <header class="hero-header">
+        <h1 class="hero-title" data-lang="en">Complete Platform Architecture & Module Blueprint</h1>
+        <h1 class="hero-title" data-lang="fr">Architecture Complète & Spécifications des Modules</h1>
+
+        <p class="hero-subtitle" data-lang="en">Detailed technical breakdown of user interfaces, shop catalog controls, customization engines, and master administrative tools.<!--[cite: 12] --></p>
+        <p class="hero-subtitle" data-lang="fr">Spécifications détaillées des interfaces utilisateur, du catalogue, du moteur de personnalisation et de l'administration centralisée.<!--[cite: 12] --></p>
+    </header>
+
+    <!-- SECTION 1: USER-FACING STOREFRONT & CATALOG -->
+    <section>
+        <h2 class="section-title" data-lang="en">01. Storefront, Catalog & Product Display</h2>
+        <h2 class="section-title" data-lang="fr">01. Vitrine, Catalogue & Fiche Produit</h2>
+
+        <div class="cards-grid">
+
+            <!-- Module 1: Homepage -->
+            <div class="info-card">
+                <span class="card-tag">Front Office</span>
+
+                <div data-lang="en">
+                    <h3>Homepage & Showcase</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>Announcement Bar:</strong> Top banner for store notices, promo codes, and shipping updates.<!--[cite: 12] --></li>
+                        <li><strong>Hero Media Slider:</strong> Video carousel for seasonal footwear and apparel drops.<!--[cite: 12] --></li>
+                        <li><strong>Category Grid:</strong> Visual navigation cards for Men, Women, Kids, Accessories, and Brands.<!--[cite: 12] --></li>
+                        <li><strong>Top Products & New Arrivals:</strong> Carousels synced directly with XL POS inventory.<!--[cite: 12] --></li>
+                        <li><strong>Brand Story & Reviews:</strong> Verified shopper rating feed and brand authenticity story.<!--[cite: 12] --></li>
+                        <li><strong>Header Controls:</strong> Instant search bar, cart drawer, wishlist counter, and theme toggle.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Page d'Accueil & Vitrine</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>Barre d'Annonce :</strong> Bandeau supérieur pour promos, alertes et infos de livraison.<!--[cite: 12] --></li>
+                        <li><strong>Slider Média Hero :</strong> Carrousel vidéo pour le lancement des nouvelles collections.<!--[cite: 12] --></li>
+                        <li><strong>Grille de Catégories :</strong> Navigations visuelles pour Hommes, Femmes, Enfants, etc.<!--[cite: 12] --></li>
+                        <li><strong>Nouveautés & Ventes :</strong> Carrousels synchronisés en direct avec la caisse XL POS.<!--[cite: 12] --></li>
+                        <li><strong>Avis & Histoire de Marque :</strong> Flux d'avis clients vérifiés et garanties d'authenticité.<!--[cite: 12] --></li>
+                        <li><strong>Barre d'En-tête :</strong> Recherche instantanée, panier, liste de souhaits et sélecteur de thème.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 2: Catalog & Filters -->
+            <div class="info-card">
+                <span class="card-tag">Shop Engine</span>
+
+                <div data-lang="en">
+                    <h3>Boutique & Catalog Filters</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>View Switcher:</strong> Instant toggle between Grid (2/3/4 items per row) and List view.<!--[cite: 12] --></li>
+                        <li><strong>Instant Search:</strong> Sub-300ms keyword filter by product name, SKU, or brand.<!--[cite: 12] --></li>
+                        <li><strong>Multi-Attribute Sidebar:</strong>
+                            <br>&bull; Universal Size Matrix (Kids EU 20–35, Adults 36–47, XS to 3XL)<!--[cite: 12] -->
+                            <br>&bull; Real-time Color Swatches & Stock status toggle<!--[cite: 12] -->
+                            <br>&bull; Dynamic DZD Price Range Slider<!--[cite: 12] -->
+                        </li>
+                        <li><strong>Sorting Engine:</strong> Sort by Newest, Price, Popularity, or Discount Percentage.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Boutique & Filtres Catalogue</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>Sélecteur d'Affichage :</strong> Bascule instantanée entre Grille (2/3/4 par ligne) et Liste.<!--[cite: 12] --></li>
+                        <li><strong>Recherche Instantanée :</strong> Filtrage en moins de 300ms par nom, SKU ou marque.<!--[cite: 12] --></li>
+                        <li><strong>Barre de Filtres Multi-Attributs :</strong>
+                            <br>&bull; Matrice des Tailles (Pointures EU 20–47, Vêtements XS à 3XL)<!--[cite: 12] -->
+                            <br>&bull; Pastilles de couleurs en temps réel et filtre "En stock"<!--[cite: 12] -->
+                            <br>&bull; Curseur dynamique de prix en DZD<!--[cite: 12] -->
+                        </li>
+                        <li><strong>Moteur de Tri :</strong> Tri par Nouveautés, Prix, Popularité ou Remises.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 3: Product Display -->
+            <div class="info-card">
+                <span class="card-tag">Product View</span>
+
+                <div data-lang="en">
+                    <h3>Product Page & Quick View</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>Quick View Modal:</strong> Preview gallery, size selector, and details without leaving catalog.<!--[cite: 12] --></li>
+                        <li><strong>Variant Stock Alert:</strong> Live inventory indicator down to specific size/color combinations.<!--[cite: 12] --></li>
+                        <li><strong>"Notify Me" Button:</strong> Automated notification request when a size is restocked by XL POS.<!--[cite: 12] --></li>
+                        <li><strong>Smart Style Matcher:</strong> Recommendation engine displaying matching apparel/sneakers below.<!--[cite: 12] --></li>
+                        <li><strong>Interactive Size Guide:</strong> Pop-up chart for shoe and clothing sizing standard conversion.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Fiche Produit & Aperçu Rapide</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>Aperçu Rapide :</strong> Modale avec galerie, choix de taille et description sans quitter la page.<!--[cite: 12] --></li>
+                        <li><strong>Indicateur de Stock Précis :</strong> État du stock par variante exacte (ex: 2 restantes en 42).<!--[cite: 12] --></li>
+                        <li><strong>Alerte Réapprovisionnement :</strong> Bouton d'alerte automatique lors du réassort via XL POS.<!--[cite: 12] --></li>
+                        <li><strong>Recommandation de Style :</strong> Suggestion automatique d'articles assortis (t-shirt + short).<!--[cite: 12] --></li>
+                        <li><strong>Guide des Tailles :</strong> Modale interactive de correspondance des tailles et pointures.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: CHECKOUT, CUSTOMIZATION & USER ACCOUNTS -->
+    <section>
+        <h2 class="section-title" data-lang="en">02. Cart, Customization & Customer Accounts</h2>
+        <h2 class="section-title" data-lang="fr">02. Panier, Personnalisation & Espace Client</h2>
+
+        <div class="cards-grid">
+
+            <!-- Module 4: Cart & Delivery -->
+            <div class="info-card">
+                <span class="card-tag">Checkout Flow</span>
+
+                <div data-lang="en">
+                    <h3>Shopping Cart & Delivery Engine</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>Cart Drawer:</strong> Quick slide-out side drawer with locked stock quantity adjusters.<!--[cite: 12] --></li>
+                        <li><strong>Custom Back-Print Engine:</strong> Custom text/number input for t-shirt jersey printing with live text preview.<!--[cite: 12] --></li>
+                        <li><strong>58 Wilaya Delivery Calculator:</strong> Dynamic fees calculated based on Wilaya, Commune, and delivery mode (Home vs. Stop-Desk/Bureau).<!--[cite: 12] --></li>
+                        <li><strong>Promo System:</strong> Real-time coupon code validator with clear price breakdown in DZD.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Panier & Calculateur de Livraison</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>Tiroir Panier :</strong> Panier latéral coulissant avec ajustement de quantité bloqué sur le stock réel.<!--[cite: 12] --></li>
+                        <li><strong>Personnalisation Flocage :</strong> Champ texte/numéro pour maillots avec prévisualisation en direct.<!--[cite: 12] --></li>
+                        <li><strong>Calculateur 58 Wilayas :</strong> Calcul automatique selon la Wilaya, Commune et mode (À domicile ou Stop-Desk).<!--[cite: 12] --></li>
+                        <li><strong>Codes Promos :</strong> Validation instantanée des remises avec récapitulatif clair en DZD.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 5: Customer Portal -->
+            <div class="info-card">
+                <span class="card-tag">User Portal</span>
+
+                <div data-lang="en">
+                    <h3>Account & Live Tracking</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>Profile & Addresses:</strong> Saved delivery locations and contact details management.<!--[cite: 12] --></li>
+                        <li><strong>Live Order Tracker:</strong> Visual progress bar (<em>Pending &rarr; Confirmed &rarr; Shipped &rarr; Delivered</em>).<!--[cite: 12] --></li>
+                        <li><strong>Self-Service Cancellation:</strong> Cancel orders prior to shipping status update.<!--[cite: 12] --></li>
+                        <li><strong>Courier Info Card:</strong> Assigned delivery courier company, tracking ID, and driver contact.<!--[cite: 12] --></li>
+                        <li><strong>Verified Post-Delivery Reviews:</strong> Unlocked exclusively after successful delivery.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Espace Client & Suivi en Direct</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>Profil & Adresses :</strong> Gestion des coordonnées et des adresses de livraison enregistrées.<!--[cite: 12] --></li>
+                        <li><strong>Suivi de Commande :</strong> Barre de progression (<em>En attente &rarr; Confirmée &rarr; Expédiée &rarr; Livrée</em>).<!--[cite: 12] --></li>
+                        <li><strong>Annulation Autonome :</strong> Bouton d'annulation actif avant l'étape d'expédition.<!--[cite: 12] --></li>
+                        <li><strong>Fiche Livreur :</strong> Transporteur assigné, numéro de suivi et contact du livreur.<!--[cite: 12] --></li>
+                        <li><strong>Avis Vérifiés :</strong> Déblocage des avis uniquement après confirmation de la livraison.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: MASTER ADMIN DASHBOARD & SECURITY -->
+    <section>
+        <h2 class="section-title" data-lang="en">03. Master Admin Dashboard & Core Infrastructure</h2>
+        <h2 class="section-title" data-lang="fr">03. Panneau d'Administration Central & Sécurité</h2>
+
+        <div class="cards-grid">
+
+            <!-- Module 6: Master Admin -->
+            <div class="info-card">
+                <span class="card-tag">Back Office</span>
+
+                <div data-lang="en">
+                    <h3>Store Control Dashboard</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>Analytics Suite:</strong> Real-time revenue charts, order counts, and low-stock alerts.<!--[cite: 12] --></li>
+                        <li><strong>Catalog Matrix Editor:</strong> Full CRUD manager for products, variant sizes, colors, and prices.<!--[cite: 12] --></li>
+                        <li><strong>XL POS Control Hub:</strong> Sync logs, API connection test button, and manual sync trigger.<!--[cite: 12] --></li>
+                        <li><strong>1-Click Shipping Labels:</strong> Generate ready-to-print tickets for Yalidine, ZR Express, etc.<!--[cite: 12] --></li>
+                        <li><strong>Promo Code Generator:</strong> Configure expiration rules and minimum spend limits.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Panneau d'Administration</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>Tableau de Bord :</strong> Graphiques de revenus, volumes de commandes et alertes stock bas.<!--[cite: 12] --></li>
+                        <li><strong>Gestionnaire de Catalogue :</strong> Modification complète des produits, tailles, couleurs et prix.<!--[cite: 12] --></li>
+                        <li><strong>Console XL POS :</strong> Journaux de synchro, test de connexion API et déclencheur manuel.<!--[cite: 12] --></li>
+                        <li><strong>Impression Bordereaux 1-Clic :</strong> Étiquettes prêtes à imprimer pour Yalidine, ZR Express, etc.<!--[cite: 12] --></li>
+                        <li><strong>Générateur de Promos :</strong> Configuration des dates d'expiration et seuils de commande.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Module 7: AI Security & Performance -->
+            <div class="info-card">
+                <span class="card-tag">System Layer</span>
+
+                <div data-lang="en">
+                    <h3>AI Security & System Optimization</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>AI Anti-Spam Firewall:</strong> Blocks automated fake orders, IP anomalies, and phone spam.<!--[cite: 12] --></li>
+                        <li><strong>Review Protection:</strong> Limits feedback submission strictly to verified orders.<!--[cite: 12] --></li>
+                        <li><strong>DOM Virtualization:</strong> Unrenders off-screen catalog items to maintain zero mobile lag.<!--[cite: 12] --></li>
+                        <li><strong>Media Optimizer:</strong> Automatic conversion to WebP/AVIF formats with 90% size reduction.<!--[cite: 12] --></li>
+                        <li><strong>Dark / Light Engine:</strong> Built-in theme switcher supporting user preference.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Sécurité IA & Optimisation Système</h3>
+                    <ul style="margin-left: 18px; color: var(--text-muted); line-height: 1.7;">
+                        <li><strong>Pare-feu Anti-Spam IA :</strong> Bloque les fausses commandes, anomalies d'IP et fausses données.<!--[cite: 12] --></li>
+                        <li><strong>Protection des Avis :</strong> Soumission restreinte exclusivement aux acheteurs vérifiés.<!--[cite: 12] --></li>
+                        <li><strong>DOM Virtuel :</strong> Ne charge que les éléments visibles pour garantir zéro latence sur mobile.<!--[cite: 12] --></li>
+                        <li><strong>Optimisation Média :</strong> Conversion auto en WebP/AVIF réduisant la taille des images de 90%.<!--[cite: 12] --></li>
+                        <li><strong>Sélecteur Thème Sombre / Clair :</strong> Thème visuel natif commutable en un clic.<!--[cite: 12] --></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<script>
+    function toggleLanguage() {
+        document.body.classList.toggle('lang-fr');
+    }
+
+    async function exportFullPDF() {
+        const pages = [
+            'index.html',
+            'architecture.html',
+            'blueprint.html',
+            'prerequisites.html'
+        ];
+
+        // Create an isolated hidden rendering container
+        const printFrame = document.createElement('iframe');
+        printFrame.style.position = 'fixed';
+        printFrame.style.right = '0';
+        printFrame.style.bottom = '0';
+        printFrame.style.width = '0';
+        printFrame.style.height = '0';
+        printFrame.style.border = '0';
+        document.body.appendChild(printFrame);
+
+        const frameDoc = printFrame.contentWindow.document;
+        const isFrench = document.body.classList.contains('lang-fr');
+
+        frameDoc.open();
+        frameDoc.write(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>ProFoot Plus - Complete Technical Proposal</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body class="${isFrench ? 'lang-fr' : ''}">
+            <main class="container">
+    `);
+
+        // Asynchronously compile <main> blocks from each proposal section
+        for (let i = 0; i < pages.length; i++) {
+            try {
+                const response = await fetch(pages[i]);
+                const htmlText = await response.text();
+                const parser = new DOMParser();
+                const parsedDoc = parser.parseFromString(htmlText, 'text/html');
+                const mainContent = parsedDoc.querySelector('main.container');
+
+                if (mainContent) {
+                    frameDoc.write(mainContent.innerHTML);
+                    if (i < pages.length - 1) {
+                        frameDoc.write('<div style="page-break-after: always; margin-bottom: 40px;"></div>');
+                    }
+                }
+            } catch (error) {
+                console.error(`Error loading section ${pages[i]}:`, error);
+            }
+        }
+
+        frameDoc.write('</main></body></html>');
+        frameDoc.close();
+
+        // Trigger native PDF print sequence after styles load
+        setTimeout(() => {
+            printFrame.contentWindow.focus();
+            printFrame.contentWindow.print();
+            document.body.removeChild(printFrame);
+        }, 400);
+    }
+</script>
+</body>
+</html>

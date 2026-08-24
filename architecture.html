@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProFoot Plus - Technical Proposal | Architecture & POS Sync</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Persistent Executive Navbar -->
+<nav class="top-nav">
+    <div class="brand-logo">PROFOOT <span>PLUS</span></div>
+    <ul class="nav-links">
+        <li><a href="index.html">01. Executive Overview</a></li>
+        <li><a href="architecture.html" class="active">02. Validation & POS Sync</a></li>
+        <li><a href="blueprint.html">03. Platform Blueprint</a></li>
+        <li><a href="prerequisites.html">04. Requirements</a></li>
+    </ul>
+    <div class="nav-controls">
+        <button class="btn-control" onclick="toggleLanguage()">FR / EN</button>
+        <button class="btn-control" onclick="exportFullPDF()">Export PDF</button>
+    </div>
+</nav>
+
+<main class="container">
+
+    <!-- Hero Header -->
+    <header class="hero-header">
+        <h1 class="hero-title" data-lang="en">Technical Validation & Integration Architecture</h1>
+        <h1 class="hero-title" data-lang="fr">Validation Technique & Architecture d'Intégration</h1>
+
+        <p class="hero-subtitle" data-lang="en">Live production benchmark analysis, bidirectional XL POS WebServices workflow, and Oracle Enterprise Cloud stack specifications.<!--[cite: 10, 11] --></p>
+        <p class="hero-subtitle" data-lang="fr">Analyse benchmark en production, flux de travail bidirectionnel XL POS WebServices, et spécifications du Cloud Oracle Enterprise.<!--[cite: 10, 11] --></p>
+    </header>
+
+    <!-- SECTION 1: LIVE PRODUCTION BENCHMARK -->
+    <section>
+        <h2 class="section-title" data-lang="en">01. Live Production Benchmark (Oracle Cloud)</h2>
+        <h2 class="section-title" data-lang="fr">01. Benchmark de Production en Direct (Oracle Cloud)</h2>
+
+        <div class="info-card" style="margin-bottom: 30px;">
+            <span class="card-tag">Proof of Performance</span>
+
+            <div data-lang="en">
+                <h3>Live Database Optimization Benchmark</h3>
+                <p>To verify our database optimization capability under heavy loads, inspect our live production deployment hosted on Oracle Cloud Architecture:<!--[cite: 10] --></p>
+                <p style="margin: 15px 0;"><strong>Live Demo Link:</strong> <a href="https://superettelaibi.com/shopping" target="_blank" style="color: var(--accent-blue); text-decoration: underline;">https://superettelaibi.com/shopping</a><!--[cite: 10] --></p>
+                <ul style="margin-left: 20px; color: var(--text-muted);">
+                    <li><strong>Dataset Scale:</strong> 6,000+ active product items loaded into a single page interface.<!--[cite: 10] --></li>
+                    <li><strong>Sub-300ms Speed:</strong> Query rendering upon rapid page scroll.<!--[cite: 10] --></li>
+                    <li><strong>Zero Lag:</strong> Smooth category filtering without browser stutter or memory bloat.<!--[cite: 10] --></li>
+                    <li><strong>Architecture:</strong> Deployed on the exact Oracle Cloud setup planned for ProFoot Plus (engineered for 10,000+ SKUs).<!--[cite: 10] --></li>
+                </ul>
+            </div>
+
+            <div data-lang="fr">
+                <h3>Démonstration d'Optimisation en Direct</h3>
+                <p>Pour vérifier notre capacité d'optimisation sous forte charge, consultez notre déploiement en production hébergé sur l'architecture Oracle Cloud :<!--[cite: 10] --></p>
+                <p style="margin: 15px 0;"><strong>Lien de Démo en Direct :</strong> <a href="https://superettelaibi.com/shopping" target="_blank" style="color: var(--accent-blue); text-decoration: underline;">https://superettelaibi.com/shopping</a><!--[cite: 10] --></p>
+                <ul style="margin-left: 20px; color: var(--text-muted);">
+                    <li><strong>Échelle du Catalogue :</strong> +6 000 articles actifs chargés sur une seule interface.<!--[cite: 10] --></li>
+                    <li><strong>Vitesse Sub-300ms :</strong> Rendu des requêtes immédiat lors du défilement.<!--[cite: 10] --></li>
+                    <li><strong>Zéro Latence :</strong> Filtrage fluide sans ralentissement ni surcharge mémoire.<!--[cite: 10] --></li>
+                    <li><strong>Architecture :</strong> Déployé sur la même configuration Oracle Cloud prévue pour ProFoot Plus (+10 000 articles).<!--[cite: 10] --></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: XL POS INTEGRATION WORKFLOW -->
+    <section>
+        <h2 class="section-title" data-lang="en">02. XL POS Integration Setup & Workflow</h2>
+        <h2 class="section-title" data-lang="fr">02. Intégration XL POS & Flux de Synchronisation</h2>
+
+        <div class="cards-grid" style="margin-bottom: 30px;">
+
+            <!-- Activation Steps -->
+            <div class="info-card">
+                <span class="card-tag">Activation Guide</span>
+
+                <div data-lang="en">
+                    <h3>3-Step POS Setup</h3>
+                    <ol style="margin-left: 20px; color: var(--text-muted); line-height: 1.8;">
+                        <li><strong>Request Module:</strong> Ask Boitex Info (Bir Khadem, Alger) to enable the Connecteur E-Commerce Standard (WebServices API) license on your XL POS register.<!--[cite: 10] --></li>
+                        <li><strong>Obtain Credentials:</strong> Receive your secure API Key and Endpoint URL from Boitex Info.<!--[cite: 10] --></li>
+                        <li><strong>Handover:</strong> Send both credentials to us to activate automated backend security and sync listeners.<!--[cite: 10] --></li>
+                    </ol>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Activation en 3 Étapes</h3>
+                    <ol style="margin-left: 20px; color: var(--text-muted); line-height: 1.8;">
+                        <li><strong>Activer le Module :</strong> Demander à Boitex Info (Bir Khadem, Alger) d'activer la licence Connecteur E-Commerce Standard (API WebServices) sur votre caisse XL POS.<!--[cite: 10] --></li>
+                        <li><strong>Obtenir les Accès :</strong> Récupérer votre Clé API et votre URL Endpoint sécurisée fournies par Boitex Info.<!--[cite: 10] --></li>
+                        <li><strong>Transmission :</strong> Nous transmettre ces deux identifiants pour connecter le moteur de synchronisation.<!--[cite: 10] --></li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- How Sync Works -->
+            <div class="info-card">
+                <span class="card-tag">Two-Way Flow</span>
+
+                <div data-lang="en">
+                    <h3>Real-Time Data Logic</h3>
+                    <ul style="margin-left: 20px; color: var(--text-muted); line-height: 1.8;">
+                        <li><strong>In-Store Purchase &rarr; Website:</strong> Barcode scanned at shop register &rarr; XL POS sends API payload &rarr; Website stock decreases within milliseconds.<!--[cite: 10] --></li>
+                        <li><strong>Online Purchase &rarr; In-Store POS:</strong> Customer orders on website &rarr; Order drops into XL POS register as an incoming command ticket &rarr; Counter stock auto-deducts.<!--[cite: 10] --></li>
+                    </ul>
+                </div>
+
+                <div data-lang="fr">
+                    <h3>Flux de Données en Direct</h3>
+                    <ul style="margin-left: 20px; color: var(--text-muted); line-height: 1.8;">
+                        <li><strong>Vente Magasin &rarr; Site Web :</strong> Code-barres scanné en caisse &rarr; Payload API instantané XL POS &rarr; Le stock du site diminue en quelques millisecondes.<!--[cite: 10] --></li>
+                        <li><strong>Commande Web &rarr; Caisse Magasin :</strong> Commande passée en ligne &rarr; Transfert direct sur la caisse XL POS sous forme de ticket &rarr; Déduction automatique du stock physique.<!--[cite: 10] --></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Official Links -->
+        <div class="info-card" style="margin-bottom: 30px;">
+            <span class="card-tag">Official References</span>
+            <div data-lang="en">
+                <p>Official XL Soft Connector Documentation: <a href="https://www.xlsoft.fr/editeur-de-solutions-de-gestion-de-caisse-magasin/liste-des-fonctionnalites-du-logiciel-de-caisse/fonctionnalite-connecteur-e-commerce/" target="_blank" style="color: var(--accent-blue);">XL Soft Connecteur E-Commerce Specification</a><!--[cite: 10] --></p>
+                <p>Official Algerian Partner (Boitex Info): <a href="https://www.boitexinfo.com/401-XL-SOFT" target="_blank" style="color: var(--accent-blue);">Boitex Info XL Soft Product Overview</a><!--[cite: 10] --></p>
+            </div>
+            <div data-lang="fr">
+                <p>Documentation Officielle XL Soft : <a href="https://www.xlsoft.fr/editeur-de-solutions-de-gestion-de-caisse-magasin/liste-des-fonctionnalites-du-logiciel-de-caisse/fonctionnalite-connecteur-e-commerce/" target="_blank" style="color: var(--accent-blue);">Spécification du Connecteur E-Commerce XL Soft</a><!--[cite: 10] --></p>
+                <p>Partenaire Officiel en Algérie (Boitex Info) : <a href="https://www.boitexinfo.com/401-XL-SOFT" target="_blank" style="color: var(--accent-blue);">Présentation Produits Boitex Info XL Soft</a><!--[cite: 10] --></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: TECH STACK & ARCHITECTURE -->
+    <section>
+        <h2 class="section-title" data-lang="en">03. System Architecture & Capacity Limits</h2>
+        <h2 class="section-title" data-lang="fr">03. Architecture Système & Limites de Capacité</h2>
+
+        <div class="cards-grid">
+
+            <!-- Tech Item 1 -->
+            <div class="info-card">
+                <span class="card-tag">Frontend Engine</span>
+                <div data-lang="en">
+                    <h3>Next.js / Nuxt.js (SSR)</h3>
+                    <p>Pre-renders pages on the server before hitting mobile phones, ensuring sub-300ms speed, instant page switching, and top Google SEO placement.<!--[cite: 11] --></p>
+                </div>
+                <div data-lang="fr">
+                    <h3>Next.js / Nuxt.js (SSR)</h3>
+                    <p>Pré-rendu des pages sur le serveur pour une vitesse sub-300ms, un changement de page instantané et un référencement Google optimal.<!--[cite: 11] --></p>
+                </div>
+            </div>
+
+            <!-- Tech Item 2 -->
+            <div class="info-card">
+                <span class="card-tag">Database & Cloud</span>
+                <div data-lang="en">
+                    <h3>Oracle Cloud (4 vCPU / 24 GB RAM)</h3>
+                    <p>PostgreSQL / MySQL on dedicated ARM Ampere hardware.<!--[cite: 11] --> Holds over <strong>10,000,000 products</strong> and <strong>20,000,000 orders simultaneously</strong> at 0 DA/month.<!--[cite: 11] --></p>
+                </div>
+                <div data-lang="fr">
+                    <h3>Oracle Cloud (4 vCPU / 24 Go RAM)</h3>
+                    <p>PostgreSQL / MySQL sur matériel dédié ARM Ampere.<!--[cite: 11] --> Supporte simultanément plus de <strong>10 000 000 de produits</strong> et <strong>20 000 000 de commandes</strong> à 0 DA/mois.<!--[cite: 11] --></p>
+                </div>
+            </div>
+
+            <!-- Tech Item 3 -->
+            <div class="info-card">
+                <span class="card-tag">Media Storage</span>
+                <div data-lang="en">
+                    <h3>Cloudflare R2 + Global CDN</h3>
+                    <p>Images are offloaded, compressed, and served from global edge servers with zero bandwidth costs and ultra-fast mobile loading.<!--[cite: 11] --></p>
+                </div>
+                <div data-lang="fr">
+                    <h3>Cloudflare R2 + CDN Global</h3>
+                    <p>Les images sont compressées et servies depuis les serveurs edge les plus proches, sans frais de bande passante et avec un chargement ultra rapide.<!--[cite: 11] --></p>
+                </div>
+            </div>
+
+            <!-- Tech Item 4 -->
+            <div class="info-card">
+                <span class="card-tag">API Middleware & DevOps</span>
+                <div data-lang="en">
+                    <h3>Node.js Webhooks & Docker/NGINX</h3>
+                    <p>Listens 24/7 for XL POS updates, validates security keys, and guarantees zero downtime with isolated container deployment.<!--[cite: 11] --></p>
+                </div>
+                <div data-lang="fr">
+                    <h3>Webhooks Node.js & Docker/NGINX</h3>
+                    <p>Écoute 24/7 les mises à jour XL POS, valide les clés de sécurité et garantit une haute disponibilité via un déploiement conteneurisé.<!--[cite: 11] --></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<script>
+    function toggleLanguage() {
+        document.body.classList.toggle('lang-fr');
+    }
+
+    async function exportFullPDF() {
+        const pages = [
+            'index.html',
+            'architecture.html',
+            'blueprint.html',
+            'prerequisites.html'
+        ];
+
+        // Create an isolated hidden rendering container
+        const printFrame = document.createElement('iframe');
+        printFrame.style.position = 'fixed';
+        printFrame.style.right = '0';
+        printFrame.style.bottom = '0';
+        printFrame.style.width = '0';
+        printFrame.style.height = '0';
+        printFrame.style.border = '0';
+        document.body.appendChild(printFrame);
+
+        const frameDoc = printFrame.contentWindow.document;
+        const isFrench = document.body.classList.contains('lang-fr');
+
+        frameDoc.open();
+        frameDoc.write(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>ProFoot Plus - Complete Technical Proposal</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body class="${isFrench ? 'lang-fr' : ''}">
+            <main class="container">
+    `);
+
+        // Asynchronously compile <main> blocks from each proposal section
+        for (let i = 0; i < pages.length; i++) {
+            try {
+                const response = await fetch(pages[i]);
+                const htmlText = await response.text();
+                const parser = new DOMParser();
+                const parsedDoc = parser.parseFromString(htmlText, 'text/html');
+                const mainContent = parsedDoc.querySelector('main.container');
+
+                if (mainContent) {
+                    frameDoc.write(mainContent.innerHTML);
+                    if (i < pages.length - 1) {
+                        frameDoc.write('<div style="page-break-after: always; margin-bottom: 40px;"></div>');
+                    }
+                }
+            } catch (error) {
+                console.error(`Error loading section ${pages[i]}:`, error);
+            }
+        }
+
+        frameDoc.write('</main></body></html>');
+        frameDoc.close();
+
+        // Trigger native PDF print sequence after styles load
+        setTimeout(() => {
+            printFrame.contentWindow.focus();
+            printFrame.contentWindow.print();
+            document.body.removeChild(printFrame);
+        }, 400);
+    }
+</script>
+</body>
+</html>
